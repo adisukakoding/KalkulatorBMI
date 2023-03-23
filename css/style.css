@@ -1,0 +1,75 @@
+h1{
+    color: rgb(179, 3, 3);
+    font-size: 3em;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(221, 250, 248);
+    padding: 1em 1em;
+}
+
+form{
+    border: 11px solid rgb(120, 169, 241);
+    background-color: rgb(197, 211, 255);
+    /*padding: 1em 2em;*/
+}
+
+.textpembuka{
+    padding-bottom: 1em;
+    text-align: justify;
+}
+
+label{
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+}
+
+input[type="text"]{
+    width: 80%;
+    height: 2em;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"]{
+    height: 3em;
+}
+
+input:placeholder-shown {
+    font-style: italic;
+ }
+
+.allpages{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.kalkulatorbmi{
+    padding: 1em 1em;
+    width: 50%;
+}
+
+.hasilhitungbmi{
+    padding: 1em 1em;
+    width: 50%;
+}
+
+.formhasil{
+    border: 11px solid rgb(120, 169, 241);
+    background-color: rgb(197, 211, 255);
+    text-align: center;
+}
+.footerhasil{
+    border: 11px solid rgb(120, 169, 241);
+    background-color: rgb(197, 211, 255);
+    text-align: center;
+}
+
+.linkgoogleplay{
+    text-align: center;
+
+}
+

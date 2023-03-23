@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="js/index.js"></script> -->
+    <title>Tugas Mini Revou Course</title>
+</head>
+<body>
+<div class="allpages">
+    <div class="kalkulatorbmi">
+        <h1>KALKULATOR BMI</h1>
+        <div class="textpembuka">
+            Berat badan ideal adalah impian dari semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana dengan mu? Yuk hitung sekarang di kalkulator BMI buatan Adi. 
+        </div>
+        <form name="" method="">
+            <table style="width: 80%;">
+                <tr>  
+                    <td>
+                        <label>NAMA</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-pencil" style="color: #75000c;"></i>
+                        <input type="TEXT" name="nama" id="nama" required="true" placeholder="inputkan nama anda"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>JENIS KELAMIN</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" value="m" name="jk" id="jk" required="true"> Pria 
+                        <input type="radio" value="f" name="jk" id="jk" required="true"> Wanita
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>BERAT BADAN (kg)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-pencil" style="color: #75000c;"></i>
+                        <input type="TEXT" name="beratbadan" id="beratbadan" required="true" placeholder="inputkan berat badan anda"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>USIA (tahun)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-pencil" style="color: #75000c;"></i>
+                        <input type="TEXT" name="umur" id="umur" required="true" placeholder="inputkan usia anda"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> TINGGI BADAN (cm) </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-pencil" style="color: #75000c;"></i>
+                        <input type="TEXT" name="tinggibadan" id="tinggibadan" required="true" placeholder="inputkan tinggi badan anda"/>
+                    </td>
+                </tr>
+                <tr style="height: 1em;"></tr>
+                <tr>
+                    <td>
+                        <input id="hitung" type="button" value="HITUNG BMI" onclick="hitungbmi()">
+                        <input id="reset" type="reset" value="RESET">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="footerbb">
+            <h3>Keunggulan Fitur</h3>
+            <ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat</li>
+            </ol>
+            <p>
+                Kalkulator ini hanya boleh digunakan oleh orang deawasa (wanita hamil atau menyusui tidak boleh mengandalkan kalkulator ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+            </p>
+            <p>
+                Kalkulator akan memberikan anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Index Massa Tubuh (atau BMI) diohitung sesuai dengan berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = Kg/m<sup>2</sup>.
+            </p>
+        </div>
+    </div>
+
+    <div class="hasilhitungbmi">
+        <h1>HASIL HITUNG BMI</h1>
+        <div class="formhasil">
+            <h2>Halo</h2>
+            <div id="hasilnama" style="font-size: 3em;"></div>
+            <h2>BMI Kamu :</h2>
+            <h2 id="bmi"> 00.00</h2>
+            <h4 id="hasil"></h4>
+            <input type="button" name="downloadhasil" id="downloadhasil" value="Download Hasil BMI">
+            <br><br>
+        </div>
+        <div class="rincianhasil" id="rincianhasil">
+            <br><div id="hasilbmiantara">Anda dalam katagori : </div><br>
+            <input type="button" name="" id="" value="Konsultasi Ahli Gizi Via Aplikasi">
+            <input type="button" name="" id="" value="Registrasi Online Ahli Gizi">
+            <p>
+                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu Konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+            </p>
+            <div class="footerhasil">
+                <br><div id="penyakitdaribb">Beberapa penyakit yang kemungkinan muncul :</div><br>
+                <input type="button" name="" id="" value="Konsultasi Dokter Via Aplikasi">
+                <input type="button" name="" id="" value="Registrasi Online Sekarang">
+                <br><br>
+            </div><br>
+            <div class="linkgoogleplay">
+                <label>Download Aplikasi</label><br>
+                <img src="assets/Daco_4108569.png" height="30" weight="70">
+            </div>
+        </div>
+      
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
